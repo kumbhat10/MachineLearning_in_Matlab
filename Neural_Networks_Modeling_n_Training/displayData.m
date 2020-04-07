@@ -32,7 +32,7 @@ display_array = - ones(pad + display_rows * (example_height + pad), ...
 curr_ex = 1;
 for j = 1:display_rows
     for i = 1:display_cols
-        if curr_ex > m,
+        if curr_ex > m
             break;
         end
         % Copy the patch
@@ -51,7 +51,7 @@ end
 
 % Display Image
 h = imagesc(display_array, [-1 1]);
-
+% a = display_array;a(a<0.5) = -1;
 % Do not show axis
 axis image off
 

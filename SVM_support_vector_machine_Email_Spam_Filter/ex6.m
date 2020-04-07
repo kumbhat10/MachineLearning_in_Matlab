@@ -84,7 +84,7 @@ load('ex6data3.mat');
 plotData(X, y);
 
 fprintf('Program paused. Press enter to continue.\n');
-pause;
+% pause;
 
 %% ========== Part 7: Training SVM with RBF Kernel (Dataset 3) ==========
 % Load from ex6data3: 

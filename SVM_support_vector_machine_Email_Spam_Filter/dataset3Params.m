@@ -19,7 +19,7 @@ for iC = 1:length(values)
         model= svmTrain(X, y, C, @(x1, x2) gaussianKernel(x1, x2, sigma));
         %predictions done on validation set
         predictions = svmPredict(model, Xval); %   mean(double(predictions ~= yval))
-        result(iter,:) = [C sigma mean(double(predictions ~= yval))];
+        result(iter,:) = [C sigma mean(double(predictions ~= yval))];%% 3rd column is % of error in prediction 0 to 1
         iter = iter +1;
     end
 end
